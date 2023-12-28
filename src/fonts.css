@@ -1,0 +1,54 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap'); */
+
+
+
+@font-face {
+  font-family: 'Ostrich-Sans';
+  src: url('./fonts/Ostrich-Sans/OstrichSans-Light.otf') format('opentype'),
+       url('./fonts/Ostrich-Sans/ostrich-sans-light.woff') format('woff');
+  font-weight: 100;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'Ostrich-Sans';
+  src: url('./fonts/Ostrich-Sans/OstrichSans-Medium.otf') format('opentype'),
+       url('./fonts/Ostrich-Sans/ostrich-sans-medium.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Ostrich-Sans';
+  src: url('./fonts/Ostrich-Sans/OstrichSans-Black.otf') format('opentype'),
+       url('./fonts/Ostrich-Sans/ostrich-sans-black.woff') format('woff');
+  font-weight: 800;
+  font-style: normal;
+}
+
+
+/* stylled fonts */
+@font-face {
+  font-family: 'Ostrich-Sans';
+  src: url('./fonts/Ostrich-Sans/OstrichSansInline-Regular.otf') format('opentype');
+  font-weight: 600;
+  font-style: inline;
+}
+
+@font-face {
+  font-family: 'Ostrich-Sans';
+  src: url('./fonts/Ostrich-Sans/OstrichSansInline-Italic.otf') format('opentype');
+  font-weight: 600;
+  font-style: italic;
+}
+
+
+/* //////////////////////////////////////////////////////////// */
+
+@font-face {
+  font-family: 'Neue';
+  src: url(./fonts/Neue-Black/TheNeue-Black.woff) format(woff);
+  font-weight: 800;
+  font-style: normal;
+}
