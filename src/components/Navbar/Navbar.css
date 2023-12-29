@@ -1,0 +1,62 @@
+header {
+  display: flex;
+  max-width: 1100px;
+  width: 100%;
+}
+
+.navbar {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  width: 100vw;
+}
+
+.nav-links {
+  display: flex;
+  align-items: flex-end;
+  gap: 20px;
+  list-style: none;
+  margin: 0;
+}
+
+.logo {
+  font-family: 'Ostrich-Sans';
+  font-style: inline;
+  font-weight: 600;
+  font-size: 60px;
+  color: #8FE1A3;
+  margin: 0;
+}
+
+.links {
+  text-decoration: none;
+  color: #CCCCCC;
+  font-family: 'Neue';
+}
+
+.links:hover {
+  color: #8FE1A3;
+  transition: color .4s;
+  position: relative;
+}
+
+.links:hover::after {
+  content: '';
+  display: block;
+  position: absolute;
+  bottom: -5px;
+  width: 100%;
+  height: 2px;
+  background: #8FE1A3;
+  animation: widthFadeIn .2s ease-out;
+}
+
+
+@keyframes widthFadeIn {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
