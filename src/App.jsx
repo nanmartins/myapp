@@ -8,8 +8,13 @@ function App() {
   return (
     <>
       <BackgroundLight />
-      <Navbar />
-      <Home />
+      <div className='main-container'>
+        <Navbar />
+        <Home />
+        {/* <div> */}
+          <p className='footer'>footer / footer / footer ...</p>
+        {/* </div> */}
+      </div>
     </>
   )
 }
