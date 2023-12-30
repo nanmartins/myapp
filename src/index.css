@@ -29,7 +29,7 @@ body {
 .main-container {
   display: grid;
   place-items: center;
-  grid-template-rows: 72px 1fr 40px;
+  grid-template-rows: 80px 1fr 30px;
 }
 
 .footer {

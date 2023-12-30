@@ -1,14 +1,15 @@
 import React from 'react'
 import './Navbar.css'
+import logo from '../../assets/binary-code.png'
 
 const Navbar = () => {
   return (
     <header>
       <nav className="navbar">
-        <p className='logo'>Logo</p>
+        <img className="logo-img" src={logo} alt=""/>
         <ul className="nav-links">
-          <li><a href="#" className="links">Home</a></li>
           <li><a href="#" className="links">About</a></li>
+          <li><a href="#" className="links">Projects</a></li>
           <li><a href="#" className="links">Contact</a></li>
         </ul>
       </nav>

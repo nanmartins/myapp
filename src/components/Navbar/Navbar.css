@@ -1,14 +1,18 @@
 header {
   display: flex;
-  max-width: 1100px;
+  max-width: 2048px;
   width: 100%;
+  margin: 0 auto;
+  z-index: 1;
 }
 
 .navbar {
   display: flex;
-  align-items: flex-end;
+  align-items: center;
   justify-content: space-between;
-  width: 100vw;
+  width: calc(100vw - 40px);
+  margin: 0 auto;
+  height: 100%;
 }
 
 .nav-links {
@@ -19,17 +23,27 @@ header {
   margin: 0;
 }
 
-.logo {
-  font-family: 'Ostrich-Sans';
-  font-style: inline;
-  font-weight: 600;
+/* .logo {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-size: 60px;
   color: #C6FF00;
   margin: 0;
+} */
+
+.logo-img {
+  width: 50px;
+  box-shadow: 0 0 6px #8fe1a4d7;
+  border-radius: 50%;
+  padding: 2px;
+}
+
+.logo-img:hover {
+  box-shadow: 0 0 16px #8fe1a4d7;
 }
 
 .links {
   text-decoration: none;
+  font-size: 20px;
   color: #CCCCCC;
   font-family: 'Neue';
 }
@@ -45,8 +59,10 @@ header {
   bottom: -5px;
   width: 70%;
   height: 2px;
-  background: #8FE1A3;
-  animation: widthFadeIn .2s ease-out;
+  /* background: #8FE1A3; */
+  border: 1px solid #8FE1A3;
+  box-shadow: 1px 1px 14px #8fe1a4;
+  animation: widthFadeIn .3s linear;
 }
 
 
