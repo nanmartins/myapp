@@ -1,0 +1,16 @@
+
+.home-container {
+  width: 100vw;
+}
+
+.home-title {
+  text-align: center;
+  font-family: 'Ostrich-Sans';
+  font-style: normal;
+  font-weight: 100;
+  margin: 0;
+}
+
+.home-title-highlight {
+  color: #C6FF00;
+}
