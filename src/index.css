@@ -46,6 +46,10 @@ body {
   /* transform: rotate(20deg); */
   background: url('https://images.unsplash.com/photo-1476445704028-a36e0c798192?q=80&w=2970&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
   z-index: -1;
+  -webkit-overflow-x: hidden;
+  -moz-overflow-x: hidden;
+  -o-overflow-x: hidden;
+  overflow-x: hidden;
   /* border: 2px solid #8FE1A3; */
 }
 

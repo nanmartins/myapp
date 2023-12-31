@@ -67,6 +67,7 @@ header {
   color: #CCCCCC;
   font-family: 'Neue';
   font-style: italic;
+  text-transform: uppercase;
 }
 
 .links:hover {

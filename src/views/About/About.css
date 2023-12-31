@@ -1,17 +1,14 @@
-
-.home-container {
+.about-container {
   width: 100vw;
 }
 
-.home-title {
+.about-title {
   font-family: 'Ostrich-Sans';
   font-style: italic;
   font-size: 300px;
   margin: 0;
   line-height: 80%;
   margin: 0 15px;
-}
-
-.home-title-highlight {
+  text-align: start;
   color: #C6FF00;
 }
