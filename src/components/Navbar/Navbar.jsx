@@ -1,19 +1,15 @@
 import React from 'react'
 import './Navbar.css'
-import logo from '../../assets/binary-code.png'
+import logo from '../../assets/logo.png'
 
 const Navbar = ({setContent}) => {
 
   const handleClick = (e) => {
     e.preventDefault()
-    // setContent('/about')
-    // if (e.target.innerText === 'Home') {
-    if(e.target.src === true) {
+    if(e.target.src) {
       setContent('Home')
     }
     setContent(e.target.innerText)
-    // }
-
   }
   return (
     <header>

@@ -5,7 +5,7 @@ header {
   margin: 0 auto;
   z-index: 1;
   position: sticky;
-  top: 15px;
+  top: 0px;
 }
 
 .navbar {
@@ -28,15 +28,12 @@ header {
 
 .logo-img {
   width: 40px;
-  box-shadow: 0 0 1px #FFFFFF,
-              0 0 18px #8fe1a4;
-  border-radius: 4px;
+  /* border-radius: 4px; */
   padding: 2px;
 }
 
 .logo-img:hover {
-  /* box-shadow: 0 0 16px #8fe1a4d7; */
-  animation: flickerBox 1.5s infinite alternate;
+  cursor: pointer;
 }
 
 @keyframes flickerBox {
@@ -104,7 +101,7 @@ header {
   width: 70%;
   height: 2px;
   /* background: #8FE1A3; */
-  border: 1px solid #8FE1A3;
+  border: 1px solid #C6FF00;
   box-shadow: 1px 1px 14px #8fe1a4;
   animation: widthFadeIn .3s linear;
 }

@@ -57,7 +57,7 @@ const Footer = () => {
       centerMode={false}
       className="footer"
       containerClass="container-with-dots"
-      customTransition="all 4s linear"
+      customTransition="all 5s linear"
       dotListClass=""
       draggable={false}
       focusOnSelect={false}
@@ -78,7 +78,7 @@ const Footer = () => {
       sliderClass=""
       slidesToSlide={1}
       swipeable
-      transitionDuration={4000}
+      transitionDuration={5000}
     >
       <p className='footer-text'>footer / footer / footer / footer / footer / footer / footer...</p>
     </Carousel>

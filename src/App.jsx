@@ -11,8 +11,6 @@ function App() {
   const [content, setContent] = React.useState(null)
   let Content = Home
 
-  console.log(content)
-
   if (content === 'ABOUT') {
     Content = About
   }
@@ -27,7 +25,6 @@ function App() {
     <>
       <main className='main-container'>
         <Navbar setContent={setContent} />
-        {/* <Home /> */}
         <Content />
         <Footer />
       </main>

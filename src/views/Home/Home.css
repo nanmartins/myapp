@@ -1,17 +1,38 @@
 
 .home-container {
   width: 100vw;
+  height: 100%;
+  padding: 30px 0;
 }
 
 .home-title {
+  display: block;
   font-family: 'Ostrich-Sans';
   font-style: italic;
-  font-size: 300px;
+  font-size: 240px;
   margin: 0;
-  line-height: 80%;
-  margin: 0 15px;
+  line-height: 180px;
+  margin: 0 20px;
+  cursor: default;
+  color: #ABABAB;
 }
 
 .home-title-highlight {
   color: #C6FF00;
+}
+
+.home-subtitle {
+  font-family: 'Ostrich-Sans';
+  color: #CCCCCC;
+  font-size: 28px;
+  margin: 15px 20px;
+  margin-top: 50px;
+  cursor: default;
+}
+
+.home-subtitle-highlight {
+  color: #C6FF00;
+  font-size: 34px;
+  font-weight: 600;
+  font-style: italic;
 }
