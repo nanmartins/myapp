@@ -61,7 +61,7 @@ header {
   text-decoration: none;
   display: block;
   font-size: 18px;
-  color: #CCCCCC;
+  color: #ABABAB;
   font-family: 'Neue';
   font-style: italic;
   text-transform: uppercase;
@@ -76,20 +76,15 @@ header {
 
   0%, 18%, 22%, 25%, 53%, 57%, 100% {
 
-      text-shadow:
-      0 0 2px #fff,
-      /* 0 0 11px #fff, */
-      /* 0 0 19px #fff, */
-      0 0 40px #8fe1a4;
-      /* 0 0 80px #8fe1a4, */
-      /* 0 0 90px #8fe1a46b; */
-      /* 0 0 100px #0fa; */
-      /* 0 0 150px #0fa; */
-
+    text-shadow: 0 0 2px #C6FF00,
+                 0 0 4px #FFFFFF,
+                 0 0 20px #C6FF00;
+    color: #FFFFFF;
   }
 
   20%, 24%, 55% {
-      text-shadow: none;
+    text-shadow: none;
+    color: #ABABAB;
   }
 }
 
@@ -98,12 +93,11 @@ header {
   display: block;
   position: absolute;
   bottom: -5px;
-  width: 70%;
+  width: 100%;
   height: 2px;
-  /* background: #8FE1A3; */
   border: 1px solid #C6FF00;
-  box-shadow: 1px 1px 14px #8fe1a4;
-  animation: widthFadeIn .3s linear;
+  box-shadow: 1px 1px 14px #C6FF00;
+  animation: widthFadeIn .5s linear;
 }
 
 
@@ -112,6 +106,6 @@ header {
     width: 0;
   }
   100% {
-    width: 70%;
+    width: 100%;
   }
 }

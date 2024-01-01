@@ -7,7 +7,7 @@ const Home = () => {
       <h1 className='home-title'><span className='home-title-highlight'>&#60;Renan</span></h1>
       <h1 className='home-title'>Martins/&#62;</h1>
       <p className='home-subtitle'>
-        Front-end Developer
+        Frontend Developer
         <span className='home-subtitle-highlight'> | </span>
         React
         <span className='home-subtitle-highlight'> | </span>
