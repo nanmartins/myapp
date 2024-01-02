@@ -55,10 +55,10 @@ const Footer = () => {
 
         <div className='footer-slide'>
           <img className='footer-logo' src={logo} alt=""/>
-          &nbsp;by renan martins &nbsp;
+          nanmartins &copy; 2024
         </div>
 
-        <div className='footer-slide'> &nbsp;2024 &copy; nanmartins &nbsp; </div>
+        {/* <div className='footer-slide'> &nbsp;2024 &copy; nanmartins &nbsp; </div> */}
 
         <div className='footer-slide'>
           <a href="https://www.linkedin.com/in/nanmartins/" target="_blank">
