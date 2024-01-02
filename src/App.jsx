@@ -9,6 +9,7 @@ import Projects from './views/Projects/Projects'
 function App() {
 
   const [content, setContent] = React.useState(null)
+
   let Content = Home
 
   if (content === 'ABOUT') {
@@ -24,7 +25,7 @@ function App() {
   return (
     <>
       <main className='main-container'>
-        <Navbar setContent={setContent} />
+        <Navbar setContentToShow={setContent} />
         <Content />
         <Footer />
       </main>

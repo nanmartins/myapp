@@ -2,14 +2,14 @@ import React from 'react'
 import './Navbar.css'
 import logo from '../../assets/logo.png'
 
-const Navbar = ({setContent}) => {
+const Navbar = ({setContentToShow}) => {
 
   const handleClick = (e) => {
     e.preventDefault()
     if(e.target.src) {
-      setContent('Home')
+      setContentToShow('Home')
     }
-    setContent(e.target.innerText)
+    setContentToShow(e.target.innerText)
   }
   return (
     <header>

@@ -28,7 +28,6 @@ header {
 
 .logo-img {
   width: 40px;
-  /* border-radius: 4px; */
   padding: 2px;
 }
 
@@ -93,7 +92,7 @@ header {
   display: block;
   position: absolute;
   bottom: -5px;
-  width: 100%;
+  width: 80%;
   height: 2px;
   border: 1px solid #C6FF00;
   box-shadow: 1px 1px 14px #C6FF00;
@@ -106,6 +105,6 @@ header {
     width: 0;
   }
   100% {
-    width: 100%;
+    width: 80%;
   }
 }
