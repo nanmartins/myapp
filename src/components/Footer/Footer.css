@@ -3,6 +3,7 @@
   width: 100vw;
   display: flex;
   align-items: center;
+  justify-content: space-between;
   text-transform: uppercase;
   font-family: 'Neue';
   font-weight: 300;
@@ -10,11 +11,31 @@
   position: fixed;
   height: 30px;
   bottom: 0;
-  /* background-color: #232323; */
   background-image: linear-gradient(-45deg, #161616 0%, #2e2e2e 47%, #2e2e2e 53%, #161616 100%);
-
   color: #C6FF00;
   margin: 0;
-  padding: 0;
-  padding-left: 20px;
+  padding: 0 0 0 20px;
+}
+
+.footer-logo {
+  width: 18px;
+}
+
+.footer-slide {
+  display: flex;
+  align-items: center;
+  padding-right: 20px;
+}
+
+.footer-slide a {
+  display: flex;
+  align-items: end;
+  text-transform: lowercase;
+  font-size: 14px;
+  color: #ABABAB;
+  text-decoration: none;
+}
+
+.footer-slide a svg {
+  margin-right: 5px;
 }
