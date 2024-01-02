@@ -12,13 +12,14 @@
   height: 30px;
   bottom: 0;
   background-image: linear-gradient(-45deg, #161616 0%, #2e2e2e 47%, #2e2e2e 53%, #161616 100%);
-  color: #C6FF00;
+  color: #ABABAB;
   margin: 0;
   padding: 0 0 0 20px;
 }
 
 .footer-logo {
   width: 18px;
+  margin-right: 5px;
 }
 
 .footer-slide {

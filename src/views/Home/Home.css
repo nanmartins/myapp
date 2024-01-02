@@ -46,11 +46,11 @@
 
 .home-svg-container {
   opacity: 0.5;
-  width: 1000px;
+  width: 950px;
 }
 
 .home-svg-container svg polygon {
-  stroke: #7575757d;
+  stroke: #7575758f;
 }
 
 
