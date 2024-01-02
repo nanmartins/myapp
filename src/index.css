@@ -10,7 +10,7 @@ body {
   justify-content: center;
   background-size: 400% 400%;
   /* background-image: linear-gradient(-45deg, #2D0B2D 0%, #022e2e 48%, #022e2e 52%, #2D0B2D 100%); */
-  background-image: linear-gradient(-45deg, #161616 0%, #3f3f3f 47%, #3f3f3f 53%, #161616 100%);
+  background-image: linear-gradient(-45deg, #111111 0%, #3f3f3f 47%, #3f3f3f 53%, #111111 100%);
   /* background: #333; */
   margin: 0;
   -webkit-overflow-y: hidden;
@@ -44,7 +44,7 @@ body {
   background-size: cover;
   background-position: center;
   /* background-repeat: no-repeat; */
-  width: 100vw;
+  width: 105vw;
   opacity: 0.09;
   height: 100%;
   transform: scale(.85);
