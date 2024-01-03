@@ -35,7 +35,9 @@
 }
 
 .footer-slide a svg {
-  margin-right: 5px;
+  margin: 0 5px;
+  height: 18px;
+  width: 18px;
 }
 
 .footer-slide a:hover {
@@ -44,4 +46,30 @@
                0 0 4px #FFFFFF,
                0 0 20px #C6FF00;
   animation: flicker 1s infinite alternate;
+}
+
+
+@media screen and (max-width: 1200px) {
+  .footer {
+    font-size: 10px;
+  }
+
+  .footer-logo {
+    width: 15px;
+    /* margin-right: 5px; */
+  }
+
+  .footer-slide {
+    padding: 0 5px;
+  }
+
+  .footer-slide a {
+    font-size: 10px;
+  }
+
+  .footer-slide a svg {
+    margin-right: 5px;
+    height: 14px;
+    width: 12px;
+  }
 }
