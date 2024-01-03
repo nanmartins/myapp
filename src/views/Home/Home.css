@@ -30,7 +30,9 @@
 
 .home-subtitle {
   font-family: 'Ostrich-Sans';
-  color: #CCCCCC;
+  font-weight: 100;
+  color: #FFFFFF;
+  letter-spacing: 1px;
   font-size: 28px;
   margin: 15px 20px;
   margin-top: 50px;
@@ -51,12 +53,10 @@
 }
 
 .home-svg-container svg {
-  /* stroke: #7575758f; */
   transform: scaleX(-1);
 }
 
 
-/* //////////////////////////////////////////////// */
 
 @media screen and (max-width: 800px) {
   .home-container {
