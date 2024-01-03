@@ -4,13 +4,25 @@ import logo from '../../assets/logo.png'
 
 const Navbar = ({setContentToShow}) => {
 
+  const [selectedLink, setSelectedLink] = React.useState(null)
+
   const handleClick = (e) => {
     e.preventDefault()
+
     if(e.target.src) {
       setContentToShow('Home')
     }
+
+    if(selectedLink) {
+      selectedLink.classList.remove('link-active')
+    }
+
+    e.target.classList.add('link-active')
+
+    setSelectedLink(e.target)
     setContentToShow(e.target.innerText)
   }
+
   return (
     <header>
       <nav className="navbar">

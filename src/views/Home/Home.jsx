@@ -20,8 +20,7 @@ const Home = () => {
       </div>
 
       <div className='home-svg-container'>
-
-      <svg xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="816 -78.2492 928 1756.4985" enableBackground="new 816 -78.2492 928 1756.4985" xmlSpace="preserve" >
+        <svg xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="816 -78.2492 928 1756.4985" enableBackground="new 816 -78.2492 928 1756.4985" xmlSpace="preserve" >
         <g>
           <g>
             <polygon fill="none" stroke="#C6FF00" points="964.1938,1231.2518 892.686,1312.818 890.0591,1318.1001   "/>
@@ -1320,8 +1319,7 @@ const Home = () => {
             <polygon fill="none" stroke="#C6FF00" points="1275.7404,708.4846 1256.4429,763.2732 1275.9515,767.5553   "/>
           </g>
         </g>
-      </svg>
-
+        </svg>
       </div>
     </section>
   )
