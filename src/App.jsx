@@ -23,13 +23,13 @@ function App() {
   }
 
   return (
-    <>
+    // <>
       <main className='main-container'>
         <Navbar setContentToShow={setContent} />
         <Content />
         <Footer />
       </main>
-    </>
+    // </>
   )
 }
 

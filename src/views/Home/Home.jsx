@@ -1,11 +1,11 @@
 import React from 'react'
 import './Home.css'
-import SvgHomeBust from '../../components/SvgHomeBust/SvgHomeBust'
-import SvgContactBust from '../../components/SvgContactBust/SvgContactBust'
+const SvgHomeBust = React.lazy(() => import('../../components/SvgHomeBust/SvgHomeBust'))
 
 const Home = () => {
   return (
     <section className='home-container'>
+
       <div className='home-title-container'>
         <h1 className='home-title'><span className='home-title-highlight'>&#60;Renan</span></h1>
         <h1 className='home-title'>Martins/&#62;</h1>
@@ -18,12 +18,10 @@ const Home = () => {
           <span className='home-subtitle-highlight'> | </span>
           JavaScript
         </p>
-
       </div>
 
       <div className='home-svg-container'>
-        {/* <SvgHomeBust /> */}
-        <SvgContactBust />
+        <SvgHomeBust />
       </div>
     </section>
   )
