@@ -59,6 +59,10 @@
 
 
 @media screen and (max-width: 800px) {
+  /* .home-title-container {
+    margin-top: 60vh;
+  } */
+
   .home-container {
     grid-template-columns: 1fr;
   }
@@ -74,7 +78,8 @@
     font-size: 18px;
     margin: 20px auto;
     margin-left: 10px;
-    cursor: default;
+    font-weight: 300;
+    color: #ABABAB;
   }
 
   .home-subtitle-highlight {

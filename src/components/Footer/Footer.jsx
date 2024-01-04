@@ -55,7 +55,7 @@ const Footer = () => {
       <section className='footer'>
 
         <div className='footer-slide'>
-          <img className='footer-logo' src={logo} alt=""/>
+          {/* <img className='footer-logo' src={logo} alt=""/> */}
           nanmartins &copy; 2024
         </div>
 
