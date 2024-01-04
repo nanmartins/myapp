@@ -1,14 +1,20 @@
 import React from 'react'
 import './About.css'
+import SvgAbout from '../../components/SvgAbout/SvgAbout'
 
 const About = () => {
 
   return (
     <div className='about-container'>
 
+      <div className='about-svg-container'>
+        <SvgAbout />
+      </div>
+
       <div className='about-title-container'>
         <h1 className='about-title'>About</h1>
       </div>
+
 
       <div className='about-text-container'>
         <div id="titles">
