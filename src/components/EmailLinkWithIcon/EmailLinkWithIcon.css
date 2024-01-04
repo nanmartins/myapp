@@ -1,10 +1,9 @@
 
 #email-icon {
-  height: 28px;
-  width: 24px;
+  height: 18px;
+  width: 18px;
   display: flex;
   align-self: center;
-  margin: 0;
   margin-right: 5px;
   fill: #C6FF00;
 }

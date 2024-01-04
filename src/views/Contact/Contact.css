@@ -8,7 +8,9 @@
 }
 
 .contact-title-container {
-  margin-top: 10%;
+  height: 100%;
+  margin-top: 20px;
+  margin-left: 20px;
   z-index: 1;
 }
 
@@ -37,40 +39,77 @@
 } */
 
 .contact-subtitle {
-  font-family: 'Ostrich-Sans';
-  font-weight: 100;
-  color: #FFFFFF;
-  font-size: 30px;
+  font-family: 'Neue';
+  font-size: 22px;
   margin: 20px;
-  margin-top: 120px;
+  margin-top: 130px;
   cursor: default;
   letter-spacing: 2px;
+  text-shadow: 1px 1px 0 #000000;
+}
+
+.contact-subtitle-email {
+  font-family: 'Neue';
+  font-size: 22px;
+  margin-left: 20px;
+  letter-spacing: 2px;
+  text-shadow: 1px 1px 0 #000000;
+}
+
+.divider {
+  margin: 20px auto 30px 20px;
+  background-image: linear-gradient(to right, #ffffff00 -5px, #575757 15%, #ffffff00 80%);
+  height: 1.7px;
+}
+
+.contact-cv-container {
+  font-family: 'Neue';
+  font-size: 22px;
+  margin-left: 20px;
+  letter-spacing: 2px;
+}
+
+.contact-cv-container p {
+  margin: 0;
+}
+
+.contact-cv-download {
+  margin-left: 15px;
+  display: flex;
+  align-items: center;
+}
+
+.contact-cv-download svg {
+  width: 20px;
+  height: 24px;
+  margin: 0;
+  fill: #C6FF00;
+}
+
+.contact-cv-download button {
+  border: none;
+  background: none;
+  font-family: 'Neue';
+  font-size: 18px;
+  color: #ABABAB;
+  letter-spacing: 3px;
+  margin: 0;
+  text-shadow: 1px 1px 0 #000000;
+}
+
+.contact-cv-download button:hover {
+  animation: flicker 1.5s infinite alternate;
 }
 
 .contact-subtitle-highlight {
   font-family: 'Ostrich-Sans';
-  font-weight: 600;
-  color: #CCCCCC;
-}
+  /* font-style: italic; */
+  font-weight: 00;
+  font-size: 35px;
+  line-height: 10px;
+  color: #ABABAB;
+  text-shadow: 1px 1px 0 #000000;
 
-.contact-subtitle-email {
-  font-family: 'Ostrich-Sans';
-  font-weight: 100;
-  color: #FFFFFF;
-  font-size: 30px;
-  margin: 10px 20px;
-}
-
-.contact-by-email {
-  font-family: 'Ostrich-Sans';
-  display: flex;
-  align-content: bottom;
-  /* font-weight: 600; */
-  /* text-decoration: none; */
-  /* color: #c3c3c3; */
-  /* text-shadow: 1px 1px 0 #000000; */
-  /* letter-spacing: 3px; */
-  /* border: 1px solid #C6FF00; */
 }
 
 .contact-svg-container {
@@ -83,4 +122,75 @@
 
 .contact-svg-container svg polygon {
   stroke: #838383;
+}
+
+
+/* ----------------------------------------------- */
+
+@media screen and (max-width: 800px) {
+
+  .contact-container {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-title-container {
+    margin-left: 0;
+  }
+
+  .contact-title {
+    font-size: 100px;
+    line-height: 30px;
+    margin: 0;
+    margin-left: 10px;
+  }
+
+  .title-top {
+    font-family: 'Neue';
+    font-size: 30px;
+    color: #C6FF00;
+    font-style: italic;
+    margin-left: 15px;
+  }
+
+  .contact-subtitle {
+    font-size: 16px;
+    margin: 70px 0 0 20px;
+    font-weight: 300;
+  }
+
+  .contact-subtitle-email {
+    align-items: start;
+    font-weight: 300;
+    font-size: 16px;
+    margin-left: 20px;
+    line-height: 15px;
+  }
+
+  .contact-cv-container {
+    font-size: 18px;
+  }
+
+  .contact-cv-download {
+    margin-left: 10px;
+  }
+
+  .contact-cv-download button {
+    font-size: 13px;
+    letter-spacing: 2px;
+    padding-left: 5px;
+  }
+
+  .contact-subtitle-highlight {
+    font-size: 30px;
+    line-height: 40px;
+  }
+
+  .contact-svg-container {
+    width: 650px;
+    position: fixed;
+    right: -400px;
+    top: -100px;
+  }
+
+
 }
