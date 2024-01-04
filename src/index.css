@@ -24,7 +24,7 @@ body {
   place-items: center;
   grid-template-rows: 60px 1fr 30px;
   position: relative;
-  overflow-x: hidden;
+  overflow: hidden;
   height: 100%;
   padding: 0;
 }
@@ -33,9 +33,10 @@ body {
   content: '';
   position: absolute;
   top: 0;
+  background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  width: 110vw;
+  width: 100%;
   opacity: 0.09;
   height: 100%;
   transform: scale(.8);
