@@ -121,7 +121,8 @@
 }
 
 .contact-svg-container svg polygon {
-  stroke: #838383;
+  stroke: black;
+  stroke-width: 1.5px;
 }
 
 

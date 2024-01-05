@@ -17,8 +17,8 @@ const About = () => {
 
 
       <div className='about-text-container'>
-        <div id="titles">
-          <div id="titlecontent">
+        <div id="bio">
+          <div id="bio-content">
 
             <p className="center">Lorem<br />
               Lorem ipsum</p>

@@ -4,8 +4,8 @@ const SvgContactBust = () => {
   return (
     <>
       <svg xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="816 -78.2492 928 1756.4985" enableBackground="new 816 -78.2492 928 1756.4985" xmlSpace="preserve" >
-        <g>
-          <g>
+        {/* <g>
+          <g> */}
             <polygon fill="none" points="964.1938,1231.2518 892.686,1312.818 890.0591,1318.1001   "/>
             <polygon fill="none" points="1669.9409,1318.1001 1667.314,1312.818 1595.8062,1231.2518   "/>
             <polygon fill="none" points="1693.6201,646.8936 1694.8406,683.4442 1702.6591,626.4373   "/>
@@ -1300,8 +1300,8 @@ const SvgContactBust = () => {
             <polygon fill="none" points="1303.5913,771.9 1275.9515,767.5553 1280,799.6965   "/>
             <polygon fill="none" points="1275.7404,708.4846 1275.9515,767.5553 1302.2438,753.209   "/>
             <polygon fill="none" points="1275.7404,708.4846 1256.4429,763.2732 1275.9515,767.5553   "/>
-          </g>
-        </g>
+          {/* </g>
+        </g> */}
       </svg>
     </>
   )
