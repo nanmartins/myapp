@@ -13,8 +13,8 @@
 .about-title {
   font-family: 'Ostrich-Sans';
   font-style: italic;
-  font-size: 240px;
-  line-height: 80%;
+  font-size: 280px;
+  line-height: 50%;
   margin: 0 15px;
   text-align: start;
   color: #C6FF00;
@@ -150,9 +150,7 @@
     font-size: 100px;
     line-height: 60%;
     margin: 0 5px;
-    /* text-align: start; */
-    /* color: #C6FF00; */
-    /* z-index: 1; */
+
   }
 
   .about-svg-container {
@@ -160,7 +158,6 @@
     width: 100%;
     left: 0%;
     top: -900px;
-    /* opacity: 0.8; */
     z-index: -1;
   }
 
@@ -169,7 +166,6 @@
   }
 
   #bio {
-    /* position: absolute; */
     width: 12em;
     height: 75em;
     bottom: 30px;
@@ -188,7 +184,6 @@
     -ms-transform: perspective(50vh) rotateX(17deg) scale(0.85);
     -o-transform: perspective(50vh) rotateX(17deg) scale(0.85);
     transform: perspective(50vh) rotateX(17deg) scale(0.85);
-    /* z-index: 10; */
     color: #ABABAB;
     text-shadow: 2px 2px 0 black;
     letter-spacing: 3px;
@@ -209,11 +204,6 @@
     animation: scroll 60s linear infinite;
   }
 
-  /* @keyframes scroll {
-    0% { transform: translateY(25%) }
-    100% { transform: translateY(-120%); }
-  } */
-
   @keyframes scroll {
     0% { transform: translateY(15%); opacity: 0; }
     10% { opacity: 1; }
@@ -224,7 +214,7 @@
 
 
 /* FHD */
-@media screen and (min-width: 800px) and ( min-height: 900px) {
+@media screen and (min-width: 1700px) and ( min-height: 900px) {
   #bio {
     transform: perspective(60vh) rotateX(17deg);
   }
