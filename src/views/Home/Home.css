@@ -5,7 +5,6 @@
   overflow: hidden;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  /* position: relative; */
 }
 
 .home-title-container {
@@ -60,10 +59,6 @@
 
 
 @media screen and (max-width: 800px) {
-  /* .home-title-container {
-    margin-top: 60vh;
-  } */
-
   .home-container {
     grid-template-columns: 1fr;
   }

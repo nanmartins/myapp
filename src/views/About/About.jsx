@@ -47,10 +47,6 @@ const About = () => {
 
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam debitis consequatur earum quo illo doloremque.</p>
 
-            {/* <p className="center"><a href="#" target='_blank'>mysite.com<br />css3-starwars-scrolling-text/</a></p> */}
-
-            {/* <p>and give me a shout on Twitter <a href="https://twitter.com/craigbuckler">@craigbuckler</a> &ndash; I'd love to see how you use and abuse it!</p> */}
-
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam debitis consequatur earum quo illo doloremque nesciunt beatae. Blanditiis, magni ex. Numquam aut a necessitatibus minus, recusandae nihil veritatis aliquid exercitationem.</p>
           </div>
         </div>
