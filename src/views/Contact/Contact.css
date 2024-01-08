@@ -38,7 +38,7 @@
   color: #C6FF00;
 } */
 
-.contact-subtitle {
+/* .contact-subtitle {
   font-family: 'Neue';
   font-size: 22px;
   margin: 20px;
@@ -46,14 +46,24 @@
   cursor: default;
   letter-spacing: 2px;
   text-shadow: 1px 1px 0 #000000;
-}
+} */
 
-.contact-subtitle-email {
+/* .contact-subtitle-email {
   font-family: 'Neue';
   font-size: 22px;
   margin-left: 20px;
   letter-spacing: 2px;
   text-shadow: 1px 1px 0 #000000;
+} */
+
+.contact-subtitle-email {
+  font-family: 'Neue';
+  font-size: 22px;
+  margin: 20px;
+  margin-top: 130px;
+  cursor: default;
+  letter-spacing: 2px;
+  text-shadow: 1px 1px 0 #000000
 }
 
 .divider {
@@ -90,7 +100,7 @@
   border: none;
   background: none;
   font-family: 'Neue';
-  font-size: 18px;
+  font-size: 14px;
   color: #ABABAB;
   letter-spacing: 3px;
   margin: 0;

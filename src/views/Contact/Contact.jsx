@@ -29,12 +29,12 @@ const Contact = () => {
         <h1 className='contact-title title-top'>get in</h1>
         <h1 className='contact-title'>Contact</h1>
 
-        <div className='contact-subtitle'>
+        {/* <div className='contact-subtitle'>
           <span  className='contact-subtitle-highlight'>social:</span>
           <SocialMediaLinks />
-        </div>
+        </div> */}
 
-        <div className='divider'></div>
+        {/* <div className='divider'></div> */}
 
         <div className='contact-subtitle-email'>
           <span  className='contact-subtitle-highlight'>email:</span>
