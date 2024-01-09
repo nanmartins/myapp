@@ -5,6 +5,7 @@
   overflow: hidden;
   display: grid;
   grid-template-columns: 1fr 1fr;
+  position: relative;
 }
 
 .contact-title-container {
@@ -113,8 +114,6 @@
 
 .contact-subtitle-highlight {
   font-family: 'Ostrich-Sans';
-  /* font-style: italic; */
-  font-weight: 00;
   font-size: 35px;
   line-height: 10px;
   color: #ABABAB;
@@ -133,6 +132,29 @@
 .contact-svg-container svg polygon {
   stroke: black;
   stroke-width: 1.5px;
+}
+
+
+.contact-social-container {
+  display: flex;
+  align-items: flex-end;
+  position: absolute;
+  bottom: 15px;
+  right: -5px;
+  z-index: 10;
+}
+
+.contact-social {
+  font-family: 'Ostrich-Sans';
+  font-size: 55px;
+  line-height: 100%;
+  color: #ABABAB;
+  text-shadow: 1px 1px 0 #000000;
+  margin: 0;
+}
+
+.contact-social-container svg {
+  width: 80px;
 }
 
 
@@ -201,6 +223,15 @@
     position: fixed;
     right: -400px;
     top: -100px;
+  }
+
+  .contact-social {
+    font-size: 35px;
+    line-height: 70%;
+  }
+
+  .contact-social-container svg {
+    width: 40px;
   }
 
 
