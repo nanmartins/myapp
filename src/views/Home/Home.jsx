@@ -1,6 +1,6 @@
 import React from 'react'
 import './Home.css'
-const SvgHomeBust = React.lazy(() => import('../../components/SvgHomeBust/SvgHomeBust'))
+const SvgHomeBust = React.lazy(() => import('../../assets/svg/SvgHomeBust'))
 
 const Home = () => {
   return (
