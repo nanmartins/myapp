@@ -6,53 +6,9 @@ import ArrowLeftSvg from '../../assets/svg/ArrowLeftSvg'
 const Projects = () => {
 
   React.useEffect(() => {
-    // const moveToSelected = (element) => {
-    //   let selected, next, prev, prevSecond, nextSecond
-
-    //   console.log(element.nextElementSibling)
-
-    //   if (element === 'next') {
-    //     selected = document.querySelector('.selected').nextElementSibling
-    //   } else if (element === 'prev') {
-    //     selected = document.querySelector('.selected').previousElementSibling
-    //   } else {
-    //     selected = element
-    //   }
-
-    //   next = selected.nextElementSibling
-    //   prev = selected.previousElementSibling
-    //   prevSecond = prev ? prev.previousElementSibling : undefined
-    //   nextSecond = next ? next.nextElementSibling : undefined
-
-    //   if (selected) {
-    //     selected.classList.remove(...selected.classList)
-    //     selected.classList.add('selected')
-    //   }
-
-    //   if (prev) {
-    //     prev.classList.remove(...prev.classList)
-    //     prev.classList.add('prev')
-    //   }
-
-    //   if (next) {
-    //     next.classList.remove(...next.classList)
-    //     next.classList.add('next')
-    //   }
-
-    //   if (nextSecond) {
-    //     nextSecond.classList.remove(...nextSecond.classList)
-    //     nextSecond.classList.add('nextRightSecond')
-    //     nextSecond.nextElementSiblings?.forEach((el) => el.classList.add('hideRight'))
-    //   }
-
-    //   if (prevSecond) {
-    //     prevSecond.classList.remove(...prevSecond.classList)
-    //     prevSecond.classList.add('prevLeftSecond')
-    //     prevSecond.previousElementSiblings?.forEach((el) => el.classList.add('hideLeft'))
-    //   }
-    // }
 
     const moveToSelected = (element) => {
+
       const selected = (
         element === 'next' ? document.querySelector('.selected').nextElementSibling
           :
@@ -83,7 +39,7 @@ const Projects = () => {
       elementsToUpdate[4]?.classList.add('nextRightSecond');
 
 
-      elementsToUpdate[3]?.nextElementSiblings?.forEach((el) => el.classList.add('hideRight'));
+      elementsToUpdate[4]?.nextElementSiblings?.forEach((el) => el.classList.add('hideRight'));
       elementsToUpdate[3]?.previousElementSiblings?.forEach((el) => el.classList.add('hideLeft'));
     };
 
