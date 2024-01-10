@@ -1,187 +1,124 @@
 import React from 'react'
 import './Projects.css'
 import SvgProjectsBrain from '../../assets/svg/SvgProjectsBrain'
+import ArrowLeftSvg from '../../assets/svg/ArrowLeftSvg'
 
 const Projects = () => {
 
-
-  // const [isAnimating, setIsAnimating] = React.useState(false);
-
-  // React.useEffect(() => {
-  //   const moveToSelected = (element) => {
-  //     if (isAnimating) return;
-
-  //     setIsAnimating(true);
-
-  //     let selected, next, prev, prevSecond, nextSecond;
-
-  //     if (element === 'next') {
-  //       selected = document.querySelector('.selected').nextElementSibling;
-  //     } else if (element === 'prev') {
-  //       selected = document.querySelector('.selected').previousElementSibling;
-  //     } else {
-  //       selected = element;
-  //     }
-
-  //     next = selected ? selected.nextElementSibling : null;
-  //     prev = selected ? selected.previousElementSibling : null;
-  //     prevSecond = prev ? prev.previousElementSibling : null;
-  //     nextSecond = next ? next.nextElementSibling : null;
-
-  //     const onAnimationEnd = () => {
-  //       setIsAnimating(false);
-  //     };
-
-  //     const elements = [selected, prev, next, nextSecond, prevSecond];
-
-  //     elements.forEach((el) => {
-  //       if (el) {
-  //         el.classList.remove(...el.classList);
-  //         el.addEventListener('transitionend', onAnimationEnd, { once: true });
-  //       }
-  //     });
-
-  //     if (selected) {
-  //       selected.classList.add('selected');
-  //     }
-
-  //     if (prev) {
-  //       prev.classList.add('prev');
-  //     }
-
-  //     if (next) {
-  //       next.classList.add('next');
-  //     }
-
-  //     if (nextSecond) {
-  //       nextSecond.classList.add('nextRightSecond');
-  //       nextSecond.nextElementSiblings?.forEach((el) => el.classList.add('hideRight'));
-  //     }
-
-  //     if (prevSecond) {
-  //       prevSecond.classList.add('prevLeftSecond');
-  //       prevSecond.previousElementSiblings?.forEach((el) => el.classList.add('hideLeft'));
-  //     }
-  //   };
-
-  //   // Eventos de teclado
-  //   const handleKeyDown = (e) => {
-  //     switch (e.which) {
-  //       case 37: // left
-  //         moveToSelected('prev');
-  //         break;
-  //       case 39: // right
-  //         moveToSelected('next');
-  //         break;
-  //       default:
-  //         return;
-  //     }
-  //     e.preventDefault();
-  //   };
-
-  //   const prevButton = document.getElementById('prev');
-  //   if (prevButton) {
-  //     prevButton.addEventListener('click', () => moveToSelected('prev'));
-  //   }
-
-  //   const nextButton = document.getElementById('next');
-  //   if (nextButton) {
-  //     nextButton.addEventListener('click', () => moveToSelected('next'));
-  //   }
-
-  //   document.addEventListener('keydown', handleKeyDown);
-
-  //   // Limpeza do listener de evento ao desmontar o componente
-  //   return () => {
-  //     document.removeEventListener('keydown', handleKeyDown);
-  //     if (prevButton) {
-  //       prevButton.removeEventListener('click', () => moveToSelected('prev'));
-  //     }
-  //     if (nextButton) {
-  //       nextButton.removeEventListener('click', () => moveToSelected('next'));
-  //     }
-  //   };
-  // }, [isAnimating]);
-
-
   React.useEffect(() => {
+    // const moveToSelected = (element) => {
+    //   let selected, next, prev, prevSecond, nextSecond
+
+    //   console.log(element.nextElementSibling)
+
+    //   if (element === 'next') {
+    //     selected = document.querySelector('.selected').nextElementSibling
+    //   } else if (element === 'prev') {
+    //     selected = document.querySelector('.selected').previousElementSibling
+    //   } else {
+    //     selected = element
+    //   }
+
+    //   next = selected.nextElementSibling
+    //   prev = selected.previousElementSibling
+    //   prevSecond = prev ? prev.previousElementSibling : undefined
+    //   nextSecond = next ? next.nextElementSibling : undefined
+
+    //   if (selected) {
+    //     selected.classList.remove(...selected.classList)
+    //     selected.classList.add('selected')
+    //   }
+
+    //   if (prev) {
+    //     prev.classList.remove(...prev.classList)
+    //     prev.classList.add('prev')
+    //   }
+
+    //   if (next) {
+    //     next.classList.remove(...next.classList)
+    //     next.classList.add('next')
+    //   }
+
+    //   if (nextSecond) {
+    //     nextSecond.classList.remove(...nextSecond.classList)
+    //     nextSecond.classList.add('nextRightSecond')
+    //     nextSecond.nextElementSiblings?.forEach((el) => el.classList.add('hideRight'))
+    //   }
+
+    //   if (prevSecond) {
+    //     prevSecond.classList.remove(...prevSecond.classList)
+    //     prevSecond.classList.add('prevLeftSecond')
+    //     prevSecond.previousElementSiblings?.forEach((el) => el.classList.add('hideLeft'))
+    //   }
+    // }
+
     const moveToSelected = (element) => {
-      let selected, next, prev, prevSecond, nextSecond;
+      const selected = (
+        element === 'next' ? document.querySelector('.selected').nextElementSibling
+          :
+        element === 'prev' ? document.querySelector('.selected').previousElementSibling
+          :
+        element
+      )
 
-      if (element === 'next') {
-        selected = document.querySelector('.selected').nextElementSibling;
-      } else if (element === 'prev') {
-        selected = document.querySelector('.selected').previousElementSibling;
-      } else {
-        selected = element;
-      }
+      const prev = selected?.previousElementSibling;
+      const next = selected?.nextElementSibling;
+      const prevSecond = prev?.previousElementSibling;
+      const nextSecond = next?.nextElementSibling;
 
-      next = selected.nextElementSibling;
-      prev = selected.previousElementSibling;
-      prevSecond = prev ? prev.previousElementSibling : null;
-      nextSecond = next ? next.nextElementSibling : null;
+      const elementsToUpdate = [selected, prev, next, prevSecond, nextSecond];
 
-      // Adicione ou remova as classes conforme necessário
-      if (selected) {
-        selected.classList.remove(...selected.classList);
-        selected.classList.add('selected');
-      }
+      elementsToUpdate.forEach((el) => {
+        if (el) {
+          el.classList.remove(...el.classList);
+        }
+      });
 
-      if (prev) {
-        prev.classList.remove(...prev.classList);
-        prev.classList.add('prev');
-      }
+      console.log(elementsToUpdate[3], elementsToUpdate[4])
 
-      if (next) {
-        next.classList.remove(...next.classList);
-        next.classList.add('next');
-      }
+      elementsToUpdate[0]?.classList.add('selected');
+      elementsToUpdate[1]?.classList.add('prev');
+      elementsToUpdate[2]?.classList.add('next');
+      elementsToUpdate[3]?.classList.add('prevLeftSecond');
+      elementsToUpdate[4]?.classList.add('nextRightSecond');
 
-      if (nextSecond) {
-        nextSecond.classList.remove(...nextSecond.classList);
-        nextSecond.classList.add('nextRightSecond');
-        nextSecond.nextElementSiblings?.forEach((el) => el.classList.add('hideRight'));
-      }
 
-      if (prevSecond) {
-        prevSecond.classList.remove(...prevSecond.classList);
-        prevSecond.classList.add('prevLeftSecond');
-        prevSecond.previousElementSiblings?.forEach((el) => el.classList.add('hideLeft'));
-      }
+      elementsToUpdate[3]?.nextElementSiblings?.forEach((el) => el.classList.add('hideRight'));
+      elementsToUpdate[3]?.previousElementSiblings?.forEach((el) => el.classList.add('hideLeft'));
     };
 
-    // Eventos de teclado
+
+
     const handleKeyDown = (e) => {
       switch (e.which) {
         case 37: // left
-          moveToSelected('prev');
-          break;
+          moveToSelected('prev')
+          break
         case 39: // right
-          moveToSelected('next');
-          break;
+          moveToSelected('next')
+          break
         default:
-          return;
+          return
       }
-      e.preventDefault();
-    };
-
-    const prevButton = document.getElementById('prev');
-    if (prevButton) {
-      prevButton.addEventListener('click', () => moveToSelected('prev'));
+      e.preventDefault()
     }
 
-    const nextButton = document.getElementById('next');
+    const prevButton = document.getElementById('prev')
+    if (prevButton) {
+      prevButton.addEventListener('click', () => moveToSelected('prev'))
+    }
+
+    const nextButton = document.getElementById('next')
     if (nextButton) {
-      nextButton.addEventListener('click', () => moveToSelected('next'));
-    };
+      nextButton.addEventListener('click', () => moveToSelected('next'))
+    }
 
-    document.addEventListener('keydown', handleKeyDown);
+    document.addEventListener('keydown', handleKeyDown)
 
-    // Limpeza do listener de evento ao desmontar o componente
     return () => {
-      document.removeEventListener('keydown', handleKeyDown);
-    };
-  }, []);
+      document.removeEventListener('keydown', handleKeyDown)
+    }
+  }, [])
 
 
   return (
@@ -230,8 +167,13 @@ const Projects = () => {
         </div>
 
         <div className="buttons">
-          <button id="prev">Prev</button>
-          <button id="next">Next</button>
+          <button id="prev" style={{ background: 'transparent', border: 'none' }}>
+            <ArrowLeftSvg />
+          </button>
+
+          <button id="next" style={{ background: 'transparent', border: 'none', rotate: '180deg' }}>
+            <ArrowLeftSvg />
+          </button>
         </div>
 
 
