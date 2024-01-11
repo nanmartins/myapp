@@ -1,11 +1,11 @@
 import React from 'react'
 import './About.css'
-import SvgAbout from '../../components/SvgAbout/SvgAbout'
+import SvgAbout from '../../assets/svg/SvgAbout'
 
 const About = () => {
 
   return (
-    <div className='about-container'>
+    <section className='about-container'>
 
       <div className='about-svg-container'>
         <SvgAbout />
@@ -52,7 +52,7 @@ const About = () => {
         </div>
       </div>
 
-    </div>
+    </section>
   )
 }
 

@@ -1,6 +1,6 @@
 import React from 'react'
 import './Contact.css'
-import SvgContactBust from '../../components/SvgContactBust/SvgContactBust'
+import SvgContactBust from '../../assets/svg/SvgContactBust'
 import SocialMediaLinks from '../../components/SocialMediaLinks/SocialMediaLinks'
 import EmailLinkWithIcon from '../../components/EmailLinkWithIcon/EmailLinkWithIcon'
 import CV from '../../assets/CV-04-01-24.pdf'
@@ -25,7 +25,7 @@ const Contact = () => {
   };
 
   return (
-    <div className='contact-container'>
+    <section className='contact-container'>
 
       <div className='contact-title-container'>
         <h1 className='contact-title title-top'>get in</h1>
@@ -67,7 +67,7 @@ const Contact = () => {
         <ArrowDownSvg />
       </div>
 
-    </div>
+    </section>
   )
 }
 
