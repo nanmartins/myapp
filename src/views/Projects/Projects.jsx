@@ -27,6 +27,7 @@ const Projects = () => {
       elementsToUpdate.forEach((el) => {
         if (el) {
           el.classList.remove(...el.classList);
+          console.log(el.classList)
         }
       });
 
@@ -47,10 +48,10 @@ const Projects = () => {
 
     const handleKeyDown = (e) => {
       switch (e.which) {
-        case 37: // left
+        case 37:
           moveToSelected('prev')
           break
-        case 39: // right
+        case 39:
           moveToSelected('next')
           break
         default:
