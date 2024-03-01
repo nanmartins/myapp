@@ -1,7 +1,6 @@
 import React from 'react'
 import './Contact.css'
 import SvgContactBust from '../../assets/svg/SvgContactBust'
-import SocialMediaLinks from '../../components/SocialMediaLinks/SocialMediaLinks'
 import EmailLinkWithIcon from '../../components/EmailLinkWithIcon/EmailLinkWithIcon'
 import CV from '../../assets/CV-04-01-24.pdf'
 import DownloadSvg from '../../assets/svg/DownloadSvg'
@@ -39,7 +38,7 @@ const Contact = () => {
         {/* <div className='divider'></div> */}
 
         <div className='contact-subtitle-email'>
-          <span  className='contact-subtitle-highlight'>email:</span>
+          <span className='contact-subtitle-highlight'>email:</span>
           <EmailLinkWithIcon />
         </div>
 
