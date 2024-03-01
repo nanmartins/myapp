@@ -7,3 +7,14 @@
   margin-right: 5px;
   fill: #C6FF00;
 }
+
+
+.contact-by-email-container a {
+  display: flex;
+  align-items: end;
+  text-transform: lowercase;
+  font-size: 14px;
+  color: #ABABAB;
+  text-decoration: none;
+  margin-left: 10px;
+}

@@ -4,7 +4,7 @@ import EmailSvg from '../../assets/svg/EmailSvg'
 
 const EmailLinkWithIcon = () => {
   return (
-    <div className='footer-slide'>
+    <div className='contact-by-email-container'>
       <a className='contact-by-email' href="mailto:renanmartins989@gmail.com">
         <EmailSvg />
         email
